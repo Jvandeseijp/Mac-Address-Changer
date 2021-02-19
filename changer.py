@@ -15,7 +15,7 @@ subprocess.call("ifconfig elan0 down", shell=True)
 
 #This changes the MAC address to 00:11:22:33:44:66
 #You can change this to the address of your choosing, make sure to use 12 characters
-subprocess.call("ifconfig hw ether 00:11:22:33:44:66", shell=True)
+subprocess.call("ifconfig elan0 hw ether 00:11:22:33:44:66", shell=True)
 subprocess.call("ifconfig elan0 down", shell=True)
 
 
